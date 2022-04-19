@@ -1,0 +1,21 @@
+{
+  "name": "jms-telnet",
+  "version": "1.0.0",
+  "description": "JMS Telnet module",
+  "main": "telnet.js",
+  "scripts": {
+    "test": "node .test.js"
+  },
+  "keywords": [
+    "jms",
+    "telnet"
+  ],
+  "dependencies": {
+    "node-telnet-cli": "github:0LEG0/node-telnet-cli"
+  },
+  "devDependencies": {
+    "jms-engine": "github:0LEG0/jms-engine"
+  },
+  "author": "0LEG0 <a.i.s@gmx.com>",
+  "license": "Apache-2.0"
+}
