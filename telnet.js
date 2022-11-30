@@ -1,7 +1,7 @@
 "use strict";
 
 const { connect, JMessage } = require("jms-engine");
-const JENGINE = connect({selftimeout: 5000});
+const JENGINE = connect({trackname: "telnet", selftimeout: 5000});
 const DumpStream = require("./dumpstream.js");
 const dump = new DumpStream();
 const { Console } = require("console");
