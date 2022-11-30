@@ -7,7 +7,7 @@ const dump = new DumpStream();
 const { Console } = require("console");
 const dump_console = new Console(dump);
 const telnet = require("node-telnet-cli");
-const _FILE = process.env.PWD + "/conf/.jms-telnet.js";
+const _FILE = "./conf/.jms-telnet.js";
 
 /**
  * Default config options
