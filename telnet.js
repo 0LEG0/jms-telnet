@@ -1,3 +1,8 @@
+/**
+ * JMS Telnet module
+ * @author 0LEG0 <a.i.s@gmx.com>
+ * @version 1.0.1
+ */
 "use strict";
 
 const { connect, JMessage } = require("jms-engine");
@@ -7,7 +12,7 @@ const dump = new DumpStream();
 const { Console } = require("console");
 const dump_console = new Console(dump);
 const telnet = require("node-telnet-cli");
-const _FILE = "./conf/.jms-telnet.js";
+const CONF_FILE = process.env.PWD + "/conf/.telnet.js";
 
 /**
  * Default config options
@@ -15,7 +20,7 @@ const _FILE = "./conf/.jms-telnet.js";
  const CONFIG = {
     host: "127.0.0.1",
     port: 8800,
-	...require(_FILE)
+	...require(CONF_FILE)
 }
 
 function dumpToString(src) {
