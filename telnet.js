@@ -12,8 +12,8 @@ const dump = new DumpStream();
 const { Console } = require("console");
 const dump_console = new Console(dump);
 const telnet = require("node-telnet-cli");
-const CONF_FILE = process.env.PWD + "/conf/.telnet.js";
-
+const CONF_FILE = process.env.JMS_PATH + "/conf/.telnet.js";
+console.log("Load Telnet config", CONF_FILE);
 /**
  * Default config options
  */
