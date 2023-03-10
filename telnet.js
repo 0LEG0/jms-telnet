@@ -36,7 +36,8 @@ function handler(cli) {
 		if (typeof line !== "string" || line == "") return;
 		try {
 			let ans = await JENGINE.dispatch(
-				new JMessage("jengine.command", { line: line.trim().toLowerCase() }, false, false)
+				// new JMessage("jengine.command", { line: line.trim().toLowerCase() }, false, false)
+				new JMessage("jengine.command", { line: line.trim() }, false, false)
 			);
 			if (
 				typeof ans.result !== "undefined" &&
