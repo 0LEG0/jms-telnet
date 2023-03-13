@@ -1,7 +1,7 @@
 /**
  * JMS Telnet module
  * @author 0LEG0 <a.i.s@gmx.com>
- * @version 1.0.1
+ * @version 1.0.2
  */
 "use strict";
 
