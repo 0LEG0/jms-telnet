@@ -1,7 +1,7 @@
 /**
  * JMS Telnet module
  * @author 0LEG0 <a.i.s@gmx.com>
- * @version 1.0.2
+ * @version 1.0.3
  */
 "use strict";
 
@@ -34,6 +34,7 @@ function dumpToString(src) {
 function handler(cli) {
 	cli.on("line", async (line) => {
 		if (typeof line !== "string" || line == "") return;
+		if (line === "exit" || line === "quit") return cli.end();
 		try {
 			let ans = await JENGINE.dispatch(
 				// new JMessage("jengine.command", { line: line.trim().toLowerCase() }, false, false)

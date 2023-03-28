@@ -1,6 +1,6 @@
 {
   "name": "jms-telnet",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "JMS Telnet module",
   "main": "telnet.js",
   "scripts": {
